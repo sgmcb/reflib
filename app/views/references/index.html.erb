@@ -4,8 +4,9 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Tags</th>
     <th></th>
-    <th></th>
+     <th></th>
     <th></th>
   </tr>
 
@@ -13,6 +14,7 @@
   <tr>
     <td><%= reference.name %></td>
     <td><%= reference.description %></td>
+    <td><%= reference.tag_list %></td>
     <td><%= link_to 'Show', reference %></td>
     <td><%= link_to 'Edit', edit_reference_path(reference) %></td>
     <td><%= link_to 'Destroy', reference, method: :delete, data: { confirm: 'Are you sure?' } %></td>

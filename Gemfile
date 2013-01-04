@@ -38,3 +38,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# Tagging functionality
+gem 'acts-as-taggable-on'
