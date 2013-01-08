@@ -1,6 +1,9 @@
 Reflib::Application.routes.draw do
   resources :references
 
+  # Send the root directory to the references list
+  root :to => "references#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
