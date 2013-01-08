@@ -22,7 +22,7 @@
 
    <div class="field">
     <%= f.label :dept, "Department" %><br />
-    <%= f.select(:dept, options_for_select([['Choose one...', 1],['ME', 'ME'],['EE', 'EE'],['SW', 'SW'],['PM', 'PM']], 1)) %>
+    <%= f.select(:dept, options_for_select(['Choose one...', 'ME', 'EE', 'SW', 'PM'], @reference.dept)) %>
   </div>
 
   <div class="field">
