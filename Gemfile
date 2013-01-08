@@ -41,3 +41,6 @@ gem 'jquery-rails'
 
 # Tagging functionality
 gem 'acts-as-taggable-on'
+
+# File uploads with CarrierWave
+gem 'carrierwave'
