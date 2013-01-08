@@ -1,5 +1,5 @@
 class Reference < ActiveRecord::Base
-  attr_accessible :description, :name, :tag_list, :doc
+  attr_accessible :description, :name, :tag_list, :dept, :doc
 
   # Taggable!
   acts_as_taggable

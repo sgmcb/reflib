@@ -20,6 +20,11 @@
     <%= f.text_area :description %>
   </div>
 
+   <div class="field">
+    <%= f.label :dept, "Department" %><br />
+    <%= f.select(:dept, options_for_select([['Choose one...', 1],['ME', 'ME'],['EE', 'EE'],['SW', 'SW'],['PM', 'PM']], 1)) %>
+  </div>
+
   <div class="field">
     <%= f.label :doc, "Reference Document File Upload" %><br />
     <%= f.file_field :doc %>
