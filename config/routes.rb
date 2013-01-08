@@ -1,4 +1,7 @@
 Reflib::Application.routes.draw do
+  resources :topics
+
+
   resources :references
 
   # Send the root directory to the references list

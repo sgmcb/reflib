@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<h1><%= @topic.name %></h1>
+<p>There are <%= @topic.references.size %> Reference documents under this topic.</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Tags</th>
+    <th>Doc</th>
+    <th></th>
+  </tr>
+
+<% @topic.references.each do |reference| %>
+  <tr>
+    <td><%= reference.name %></td>
+    <td><%= reference.description %></td>
+    <td><%= reference.tag_list %></td>
+    <td><%= link_to 'File', reference.doc_url %></td>
+    <td><%= link_to 'Show', reference %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

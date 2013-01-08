@@ -15,14 +15,16 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
 
    <div class="field">
-    <%= f.label :dept, "Department" %><br />
-    <%= f.select(:dept, options_for_select(['Choose one...', 'ME', 'EE', 'SW', 'PM'], @reference.dept)) %>
+    <%= f.label :topic_id, "Topic" %><br />
+    <%= f.select(:topic_id, options_for_select( Topic.order("name ASC").map {|t| [t.name,t.id] }, @reference.topic )) %>
+
   </div>
 
   <div class="field">

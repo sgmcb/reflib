@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>Dept</th>
     <th>Name</th>
     <th>Description</th>
+    <th>Topic</th>
     <th>Tags</th>
     <th>Doc</th>
     <th></th>
@@ -14,9 +14,9 @@
 
 <% @references.each do |reference| %>
   <tr>
-    <td><%= reference.dept %></td>
     <td><%= reference.name %></td>
     <td><%= reference.description %></td>
+    <td><%= reference.topic.name %></td>
     <td><%= reference.tag_list %></td>
     <td><%= link_to 'File', reference.doc_url %></td>
     <td><%= link_to 'Show', reference %></td>

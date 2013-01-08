@@ -1,5 +1,11 @@
 class Reference < ActiveRecord::Base
-  attr_accessible :description, :name, :tag_list, :dept, :doc
+	# Every Reference has a Topic
+	belongs_to :topic
+
+	attr_accessible :description, :name, :topic_id, :tag_list, :doc
+
+	# Verify that we've got data where we need it
+	validates_presence_of :name, :topic_id
 
   # Taggable!
   acts_as_taggable
