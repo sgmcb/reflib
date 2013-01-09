@@ -20,6 +20,15 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  # LESS support
+  gem 'libv8'
+  gem 'less-rails'
+  gem 'therubyracer'
+
+  # Bootstrap!
+  gem 'less-rails-bootstrap'
+
 end
 
 gem 'jquery-rails'
